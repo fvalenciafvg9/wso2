@@ -79,7 +79,7 @@ wso2:
           hostname: "tenant2.management.mi.wso2.com"
           # Annotations for the Micro Integrator management Ingress.
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
 kubernetes:
@@ -186,7 +186,7 @@ am-pattern-1:
             hostname: "am.wso2.com"
             # Annotations for the API Manager Publisher-DevPortal services Ingress
             annotations:
-              kubernetes.io/ingress.class: "nginx"
+              nginx.ingress.kubernetes.io/ingress-class: "nginx"
               nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
               nginx.ingress.kubernetes.io/affinity: "cookie"
               nginx.ingress.kubernetes.io/session-cookie-name: "route"
@@ -197,21 +197,21 @@ am-pattern-1:
             hostname: "gateway.am.wso2.com"
             # Annotations for the API Manager Gateway service Ingress
             annotations:
-              kubernetes.io/ingress.class: "nginx"
+              nginx.ingress.kubernetes.io/ingress-class: "nginx"
               nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
           websub:
             enabled: true
             hostname: "websub.am.wso2.com"
             # Annotations for the API Manager WebSub service Ingress
             annotations:
-              kubernetes.io/ingress.class: "nginx"
+              nginx.ingress.kubernetes.io/ingress-class: "nginx"
               nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
           websocket:
             enabled: true
             hostname: "websocket.am.wso2.com"
             # Annotations for the API Manager WebSocket service Ingress
             annotations:
-              kubernetes.io/ingress.class: "nginx"
+              nginx.ingress.kubernetes.io/ingress-class: "nginx"
               nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
         db:
           hostname: wso2am-mysql-db-service
@@ -280,7 +280,7 @@ am-pattern-1:
             hostname: "tenant1.management.mi.wso2.com"
             # Annotations for the Micro Integrator management Ingress.
             annotations:
-              kubernetes.io/ingress.class: "nginx"
+              nginx.ingress.kubernetes.io/ingress-class: "nginx"
               nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
   kubernetes:

@@ -115,7 +115,7 @@ wso2:
           hostname: "websub.am.wso2.com"
           # Annotations for the API Manager Gateway (WebSub) service Ingress
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
       # API Manager's WebSocket specific configurations
       websocket:
@@ -128,7 +128,7 @@ wso2:
           hostname: "websocket.am.wso2.com"
           # Annotations for the API Manager Gateway (WebSocket) service Ingress
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
       # API Manager's Gateway specific configurations
@@ -142,7 +142,7 @@ wso2:
           hostname: "gateway.am.wso2.com"
           # Annotations for the API Manager Gateway service Ingress
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
         # Number of deployment replicas
@@ -207,7 +207,7 @@ wso2:
           hostname: "am.wso2.com"
           # Annotations for the API Manager Control Plane service Ingress
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
             nginx.ingress.kubernetes.io/affinity: "cookie"
             nginx.ingress.kubernetes.io/session-cookie-name: "route"
@@ -307,7 +307,7 @@ wso2:
           hostname: "management.mi.wso2.com"
           # Annotations for the Micro Integrator management Ingress.
           annotations:
-            kubernetes.io/ingress.class: "nginx"
+            nginx.ingress.kubernetes.io/ingress-class: "nginx"
             nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 
 kubernetes:
